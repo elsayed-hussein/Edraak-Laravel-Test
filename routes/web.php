@@ -21,5 +21,6 @@ Route::get('/', function () {
 Route::get('/welcome', function () {
     echo "welcome !";
 });
-Route::get('/test/{id}', [testController::class,'showTest']);
-
+Route::get('/test/{id}', [testController::class, 'showTest']);
+Route::get('/posts', [testController::class, 'getPosts']);
+Route::get('/addPost', [testController::class, 'addPost']);
